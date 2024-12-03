@@ -1,0 +1,17 @@
+.welcome-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.welcome-page h1 {
+  margin: 0px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 57px;
+  color: #00aa33;
+}

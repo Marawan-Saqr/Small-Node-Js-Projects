@@ -1,0 +1,43 @@
+.welcome-page {
+  background-image: url("./coverImage.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  z-index: 4000;
+}
+
+.welcome-page::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.welcome-page .content h1 {
+  color: var(--main-color);
+}
+
+.welcome-page .content p {
+  color: var(--white-color);
+}
+
+@media (max-width: 767px) {
+  .welcome-page .content p {
+    font-size: 16px;
+  }
+}
+
+.welcome-page .content h1,
+.welcome-page .content p {
+  font-weight: bold;
+  font-style: italic;
+  margin: 0px;
+}
